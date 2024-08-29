@@ -1,5 +1,22 @@
 import mongoose from 'mongoose';
 
+type UserType = {
+    name:string;
+    email:string;
+    password:string;
+    watching:string[];
+    watched:string[];
+    saved:string[];
+    verified:boolean;
+    gender:"male" | "female";
+    role:"admin" | "user";
+    googleId?:string;
+    _id:string;
+    createdAt:Date;
+    updatedAt:Date;
+
+}
+
 const schema = new mongoose.Schema({
     name:{type:String,required:true},
     googleId:{type:String,required:true,sparse:true},
@@ -39,8 +56,17 @@ const schema = new mongoose.Schema({
 
     passwordResetToken:{type:String},
     passwordResetExpire:{type:Date},
+
+
+    location:{type:String,required:true},
+    leadStatus:{type:String,required:true},
+    // contactNo:{type:Int,required:true},
+    quickAction:{type:String,required:true},
+    icon:{type:String,required:true}
+
 },
 {timestamps:true}
 )
 
-export const User = mongoose.models?.User || mongoose.model("User",schema);
+export const User = mongoose.models?.User || mongoose.model<UserType>("User",schema);
+export type {UserType};

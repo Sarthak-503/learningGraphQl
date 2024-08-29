@@ -34,5 +34,10 @@ const schema = new mongoose.Schema({
     verificationExpire: { type: Date },
     passwordResetToken: { type: String },
     passwordResetExpire: { type: Date },
+    location: { type: String, required: true },
+    leadStatus: { type: String, required: true },
+    // contactNo:{type:Int,required:true},
+    quickAction: { type: String, required: true },
+    icon: { type: String, required: true }
 }, { timestamps: true });
 export const User = mongoose.models?.User || mongoose.model("User", schema);
