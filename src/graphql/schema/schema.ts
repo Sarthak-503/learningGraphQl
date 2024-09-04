@@ -85,6 +85,19 @@ type SampleUser{
     age:Int!
     gender:String!
 }
+type Lead{
+     _id:ID!
+    #  organizationId:String!
+     name:String!
+     email:String!
+     contact:String!
+     leadStatus:String!
+     goodToBeCalled:String!
+     status:String!
+     dateOfGeneration:String!
+     typeOfLead:String!
+}
+
 
 type Query {
 hello:String
@@ -97,8 +110,9 @@ lectures:[Lecture]
 # query having parameter
 user(id:ID!):User
 sampleUsers:[SampleUser]
+# getColumns(columnNames: [String!]!): [String!]!
+leads:[Lead]
 }
-
 
 type Mutation {
  newUser(name:String!,age:Int!,gender:String!):String

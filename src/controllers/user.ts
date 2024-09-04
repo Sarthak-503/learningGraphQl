@@ -1,3 +1,4 @@
+import { Lead } from "../models/leadModel.js";
 import { User } from "../models/userModels.js";
 
 export const getAllUsers = async ()=>{
@@ -8,4 +9,7 @@ export const getUserById = async (id:string) => {
     const user = await User.findById(id);
     return user;
 }  
- 
+export const getAllLeads = async ()=>{
+  const users = await Lead.find();
+  return users;
+}

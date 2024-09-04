@@ -1,4 +1,4 @@
-import { getAllUsers, getUserById } from '../../controllers/user.js';
+import { getAllLeads, getAllUsers, getUserById } from '../../controllers/user.js';
 import { getAllCourses, getAllLectures, getCourseById, getCoursesOfUser } from '../../controllers/course.js';
 const myUsers = [];
 export const graphQLResolvers = {
@@ -21,6 +21,7 @@ export const graphQLResolvers = {
         courses: getAllCourses,
         course: getCourseById,
         lectures: getAllLectures,
+        leads: getAllLeads,
         sampleUsers: () => myUsers,
     },
     Course: {
@@ -40,5 +41,5 @@ export const graphQLResolvers = {
                 _1080p: lecture.videoUrl["1080p"],
             };
         }
-    }
+    },
 };

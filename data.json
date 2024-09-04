@@ -1,0 +1,51 @@
+[
+    {
+    "name": "Alice Smith",
+    "email": "alice.smith@example.com",
+    "contact": "+1234567891",
+    "leadStatus": "Active",
+    "goodToBeCalled": true,
+    "status": "Active",
+    "dateOfGeneration": "2024-09-01T10:00:00.000Z",
+    "typeOfLead": "Job Lead"
+  },
+  {
+    "name": "Bob Johnson",
+    "email": "bob.johnson@example.com",
+    "contact": "+1234567892",
+    "leadStatus": "Suspended",
+    "goodToBeCalled": false,
+    "status": "Inactive",
+    "dateOfGeneration": "2024-09-02T11:30:00.000Z",
+    "typeOfLead": "Enquiry Lead"
+  },
+  {
+    "name": "Carol Williams",
+    "email": "carol.williams@example.com",
+    "contact": "+1234567893",
+    "leadStatus": "Active",
+    "goodToBeCalled": true,
+    "status": "Active",
+    "dateOfGeneration": "2024-09-03T09:15:00.000Z",
+    "typeOfLead": "Enquiry Lead"
+  },
+  {
+    "name": "David Brown",
+    "email": "david.brown@example.com",
+    "contact": "+1234567894",
+    "leadStatus": "Suspended",
+    "goodToBeCalled": false,
+    "status": "Inactive",
+    "dateOfGeneration": "2024-09-04T14:45:00.000Z",
+    "typeOfLead": "Job Lead"
+  },
+  {
+    "name": "Eve Davis",
+    "email": "eve.davis@example.com",
+    "contact": "+1234567895",
+    "leadStatus": "Active",
+    "goodToBeCalled": true,
+    "status": "Active",
+    "dateOfGeneration": "2024-09-04T16:20:00.000Z",
+    "typeOfLead": "Job Lead"
+  }]
