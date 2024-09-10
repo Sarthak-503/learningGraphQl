@@ -1,4 +1,4 @@
-import { getAllLeads, getAllUsers, getUserById } from '../../controllers/user.js';
+import { getAllColumn, getAllLeads, getAllUsers, getUserById } from '../../controllers/user.js';
 import { getAllCourses, getAllLectures, getCourseById, getCoursesOfUser } from '../../controllers/course.js';
 import { CourseType } from '../../models/courseModel.js';
 import { LectureType } from '../../models/lectureModel.js';
@@ -33,6 +33,7 @@ export const graphQLResolvers =  {
       course:getCourseById,
       lectures:getAllLectures,
       leads:getAllLeads,
+      columns:getAllColumn,
       sampleUsers:()=>myUsers,
     },
     Course:{

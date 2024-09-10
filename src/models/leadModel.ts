@@ -1,8 +1,9 @@
 import mongoose from 'mongoose';
 
-// Define the Lead schema
+
 const leadSchema = new mongoose.Schema(
   {
+    id:{type:String,required:true},
     name: { type: String, required: true },
     email: { type: String, required: true, unique: true },
     contact: { type: String, required: true },

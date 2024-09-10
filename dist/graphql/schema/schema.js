@@ -87,6 +87,7 @@ type SampleUser{
 }
 type Lead{
      _id:ID!
+     id:Int!
     #  organizationId:String!
      name:String!
      email:String!
@@ -97,7 +98,9 @@ type Lead{
      dateOfGeneration:String!
      typeOfLead:String!
 }
-
+type Column {
+  columnName:String!
+}
 
 type Query {
 hello:String
@@ -112,6 +115,7 @@ user(id:ID!):User
 sampleUsers:[SampleUser]
 # getColumns(columnNames: [String!]!): [String!]!
 leads:[Lead]
+columns:[Column]
 }
 
 type Mutation {
