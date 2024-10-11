@@ -85,18 +85,31 @@ type SampleUser{
     age:Int!
     gender:String!
 }
+
 type Lead{
      _id:ID!
-     id:Int!
     #  organizationId:String!
-     name:String!
-     email:String!
-     contact:String!
-     leadStatus:String!
-     goodToBeCalled:String!
-     status:String!
-     dateOfGeneration:String!
-     typeOfLead:String!
+    firstName: String!
+lastName: String!
+state: String!
+city: String!
+countryISOCode: String!
+countryCode: String!
+addressLine1: String!
+source: String!
+companyName: String!
+industry: String!
+role: String!
+department: String!
+subject: String!
+description: String!
+timeOfContact: String!
+leadId: String!
+contactNumber: String!
+email: String!
+createdDt: String!
+leadType: String!
+message: String!
 }
 type Column {
   columnName:String!
